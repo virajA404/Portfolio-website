@@ -4,40 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viraj Abeywardana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <!-- navigation section start here-->
-    <nav>
+    <div class="header">
+        <img class="logo" src="images/logo.svg" alt="" />
+      <div class="nav">
         <ul>
-            <li>
-                <a href="#my-projects">My projects</a>
-            </li>
-            <li>
-                <a href="#about-me">About me</a>
-            </li>
-            <li>
-                <a href="./resume.html">My resume</a>
-            </li>
-            <li>
-                <a href="#contact-me">Contact me</a>
-            </li>
+          <li>
+            <a href="#">My projects</a>
+          </li>
+          <li>
+            <a href="/">About me </a>
+          </li>
+          <li>
+            <a href="/">My resume</a>
+          </li>
+          <li>
+            <a href="/">Blog</a>
+          </li>
+          <li>
+            <a href="/">About Us</a>
+          </li>
+          <li>
+            <button class="btn_contact" id="hamburger-menu-btn">Contact Us</button>
+          </li>
         </ul>
-    </nav>
+      </div>
+      <div class="contact">
+        <button class="btn_contact">Contact Me</button>
+      </div>
+      <span class="material-symbols-outlined">
+        menu
+        </span>
+    </div
     <!-- navigation section ends here-->
 
     <!-- Hero section starts here-->
      <section class="main">
       <div class="content">
         <h1 id="hero-text">
-          Hello! I'm Viraj  <br />
+          Hello! I'm Viraj
         </h1>
-        <h2>
-            I'm a Software Engineer <br />based in Colombo, Sri Lanka
-        </h2>
-        
-        <button class="btn-cta primary">See my projects</button>
-        <button class="btn-cta secondary">Contact me</button>
+        <p>
+            I'm a Software Engineer based in Colombo, Sri Lanka, specialize in MERN stack. Currently working as a
+            freelancer. You can checkout my projects and contact me if you have an exiting
+            project.
+        </p>
+        <button class="btn-cta-primary">See my projects</button>
+        <button class="btn-cta-secondary">Contact me</button>
       </div>
 
         <img id="hero-image" src="images/hero_image.jpg" alt="a photo of me" />    </section>
