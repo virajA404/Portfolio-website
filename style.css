@@ -1,0 +1,39 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: #0B0808;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #fbfdfc; 
+}
+nav{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    padding: 0 0.5rem;
+}
+.main{
+    max-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin:auto;
+    gap: 4vw;
+    margin-top: 4vh;
+    /* border: solid; */
+}
+#hero-image{
+    width: 25%;
+    border-radius: 1rem;
+}
