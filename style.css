@@ -44,35 +44,40 @@ a{
     font-size: 2rem !important;
 }
 /* navigation section ends here */
+
+/* hero section start here */
 .main{
     max-height: 70vh;
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     margin:auto;
     gap: 4vw;
-    margin-top: 4vh;
+    margin-top: 10vh;
     /* border: solid; */
 }
 #hero-image{
-    width: 25%;
+    width: 40%;
     border-radius: 1rem;
     border-radius: 50%;
 }
-/* .content{
-    flex-wrap: wrap;
-} */
+
 h1{
     font-size: 4rem;
     font-weight: 600;
     line-height: 130%;
+    text-align: center;
 }
 p{    
     line-height: 150%;
     padding: 1rem 0 ;
-    width: 60%;
+    text-align: center;
+    /* width: 80%; */
+}
+.cta-btns{
+    text-align: center;
 }
 .btn-cta-primary{
     background-color: #5efd8b;
@@ -80,7 +85,8 @@ p{
     padding: 0.8rem 1rem;
     font-size: 1rem;
     font-weight: 420;
-    border:none
+    border:none;
+    margin-right:1rem;
 }
 .btn-cta-secondary{
     border-radius: 0.25rem;
@@ -89,4 +95,5 @@ p{
     font-size: 1rem;
     font-weight: 420;
 }
+/* hero section end here */
 
