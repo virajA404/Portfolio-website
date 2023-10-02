@@ -6,6 +6,12 @@
     list-style: none;
     text-decoration: none;
     background-color: #fbfdfc; 
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* navigation section start here */
 .header{
@@ -19,7 +25,7 @@
 .nav ul{
     display: flex;  
 }
-a{
+.nav a{
     padding: 0 0.5rem;
     text-decoration: none;
     background: none;
@@ -82,7 +88,7 @@ p{
 .btn-cta-primary{
     background-color: #5efd8b;
     border-radius: 0.25rem;
-    padding: 0.8rem 1rem;
+    padding: 0.75rem 1rem;
     font-size: 1rem;
     font-weight: 420;
     border:none;
@@ -91,9 +97,29 @@ p{
 .btn-cta-secondary{
     border-radius: 0.25rem;
     border: 1px solid #0d0e0d;
-    padding: 0.8rem 1rem;
+    padding: 0.75rem 1rem;
     font-size: 1rem;
     font-weight: 420;
 }
 /* hero section end here */
 
+/* cards section starts here */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    width: 80vw;
+    gap: 2rem;
+}
+.card{
+
+}
+.small{
+    padding: 0.5rem 0.75rem;
+}
+.details h3{
+    text-align: center;
+}
+.container img{
+    width: 100%;
+}
+/* cards section ends here */
