@@ -43,6 +43,7 @@ body{
     border-width: 1px;
     border-radius: 0.25rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 .material-symbols-outlined{
     cursor: pointer;
@@ -61,7 +62,6 @@ body{
     box-sizing: border-box;
     flex-direction: column;
     margin:auto;
-    /* gap: 4vw; */
     margin-top: 8rem;
 }
 #hero-image{
@@ -84,7 +84,6 @@ h1{
 
 .cta-btns{
     display: flex;
-    /*  */
 }
 .btn-cta-primary{
     background-color: #5efd8b;
@@ -141,3 +140,32 @@ h2{
     border-radius: 0.25rem;
 }
 /* cards section ends here */
+
+/* contact me section starts here */
+#contact-me{
+    margin-top: 8rem;
+    width: 80vw;
+}
+form{
+    margin: 2rem;
+}
+.input-set{
+    margin-bottom: 2rem;
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline:none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+textarea{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 0.5rem;
+}
+/* contact me section ends here */
