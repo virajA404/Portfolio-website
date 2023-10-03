@@ -15,7 +15,7 @@ body{
 }
 /* navigation section start here */
 .header{
-    height: 10vh;
+    height: 8vh;
     width: 80vw;
     margin: auto;
     display: flex;
@@ -54,15 +54,15 @@ body{
 /* hero section start here */
 .main{
     max-height: 70vh;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    flex-direction: column;
     margin:auto;
-    gap: 4vw;
-    margin-top: 10vh;
-    /* border: solid; */
+    /* gap: 4vw; */
+    margin-top: 8rem;
 }
 #hero-image{
     width: 40%;
@@ -76,14 +76,15 @@ h1{
     line-height: 130%;
     text-align: center;
 }
-p{    
+.description{    
     line-height: 150%;
     padding: 1rem 0 ;
-    text-align: center;
-    /* width: 80%; */
+    /* text-align: center; */
 }
+
 .cta-btns{
-    text-align: center;
+    display: flex;
+    /*  */
 }
 .btn-cta-primary{
     background-color: #5efd8b;
@@ -93,6 +94,7 @@ p{
     font-weight: 420;
     border:none;
     margin-right:1rem;
+    /* margin-top: 0.5rem; */
 }
 .btn-cta-secondary{
     border-radius: 0.25rem;
@@ -104,22 +106,38 @@ p{
 /* hero section end here */
 
 /* cards section starts here */
+.card-section{
+    margin-top: 8rem;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+}
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
     width: 80vw;
     gap: 2rem;
+    margin-top: 2rem;
 }
 .card{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .small{
     padding: 0.5rem 0.75rem;
+    margin-right: 1;
+    margin-top: 1rem;
 }
-.details h3{
+.details h3, p {
     text-align: center;
 }
 .container img{
     width: 100%;
+    border: 1px solid black;
+    border-radius: 0.25rem;
 }
 /* cards section ends here */
