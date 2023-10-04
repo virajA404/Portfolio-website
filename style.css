@@ -146,27 +146,27 @@ h2{
 /* contact me section starts here */
 #contact-me{
     margin-top: 8rem;
-    width: 60vw;
+    width: 50%;
 }
 form{
+    margin-top: 1.5rem;
 }
 .input-set{
     margin-bottom: 1.5rem;
 }
-input{
+label{
+    font-weight: 500;
+    
+}
+input, textarea{
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
     outline:none;
-    padding-top: 0.5rem;
-    padding-bottom: 0.2rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
 }
 textarea{
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding: 0.5rem;
-    box-sizing: border-box;
     resize: vertical;
 }
 form button{
