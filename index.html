@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="images/hero_image.jpg" type="image/x-icon">
+    <link rel="icon" href="images/hero_image.png" type="image/x-icon">
 </head>
 <body>
     <!-- navigation section start here-->
     <div class="header">
-        <img class="logo" src="images/logo.svg" alt="logo" />
+        <a href="#"><img class="logo" src="images/logo.svg" alt="logo" /></a>
       <div class="nav">
         <ul>
           <li>
@@ -23,7 +23,7 @@
             <a href="/">About me </a>
           </li>
           <li>
-            <a href="./resume.html">My resume</a>
+            <a target="_blank" >My resume</a>
           </li>
           <li>
             <a href="/">Blog</a>
@@ -57,7 +57,7 @@
       </div>
       <div class="cta-btns">
         <a class="btn-cta-primary" href="#my-projects">See my projects</a>
-        <a class="btn-cta-secondary" href="#contact-me">Contact me</a>
+        <a target="_blank" class="btn-cta-secondary" href="./Viraj Abeywardan - SE Resume.pdf">My resume</a>
       </div>
       
         <!-- <img id="hero-image" src="images/hero_image.jpg" alt="a photo of me" /> -->
@@ -104,7 +104,7 @@
             <img src="./images/web frontend 2.jpg" alt="Website screenshot">
           </div>
           <div class="details">
-            <h3>Hike Bear</h3>
+            <h3>Hike Bear Website Frontend</h3>
             <p>This is an online cosmetic selling app built by using Java, Android Studio, and Firebase</p>
           </div>
           <div class="cta-btns">
@@ -119,7 +119,8 @@
     <!-- Contact me section starts here-->
     <section id="contact-me">
       <h2 id="heading-text">Contact Me</h2>
-
+      <p>Got a question or proposal, or just want
+        to say hello? Go ahead.</p>
       <form action="">
         <div class="input-set">
         <label for="">Your Name</label>
@@ -129,13 +130,13 @@
           <label for="">Your Email</label>
           <input type= "email" class= "input-field" placeholder="Enter your email">
         </div>
-        <div class="input-set">
+        <!-- <div class="input-set">
           <label for="">Subject</label>
           <input type="text" class="input-field" placeholder="Enter your  subject">
-        </div>
+        </div> -->
         <div class="input-set">
           <label for="">Your Message</label>
-          <textarea class="input-field" placeholder="Enter your message"></textarea>
+          <textarea class="input-field" rows="3" placeholder="Enter your message"></textarea>
         </div>
         <div class="cta-btns">
           <button class="btn-cta-primary" type="submit">Send</button>
