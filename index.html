@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="images/hero_image.png" type="image/x-icon">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="./script.js"></script>
 </head>
 <body>
     <!-- navigation section start here-->
@@ -20,10 +22,10 @@
             <a href="#my-projects">My projects</a>
           </li>
           <li>
-            <a href="/">About me </a>
+            <a href="#">About me </a>
           </li>
           <li>
-            <a target="_blank" >My resume</a>
+            <a target="_blank" href="./Viraj Abeywardan - SE Resume.pdf">My resume</a>
           </li>
           <li>
             <a href="/">Blog</a>
@@ -121,14 +123,14 @@
       <h2 id="heading-text">Contact Me</h2>
       <p>Got a question or proposal, or just want
         to say hello? Go ahead.</p>
-      <form action="">
+      <form onsubmit="sendEmail(); reset(); return false;">
         <div class="input-set">
         <label for="">Your Name</label>
         <input type="text" class= "input-field" placeholder="Enter your name">
         </div>
         <div class="input-set">
           <label for="">Your Email</label>
-          <input type= "email" class= "input-field" placeholder="Enter your email">
+          <input type= "email" id="email" class= "input-field" placeholder="Enter your email">
         </div>
         <!-- <div class="input-set">
           <label for="">Subject</label>
