@@ -4,120 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+    <style>
+      .btn-cta-primary{
+        background-color: #0e58f8;
+        border-radius: 0.25rem;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-weight: 420;
+        border:none;
+        margin-right:1rem;
+        color: #f2f6fe;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <h1>Viraj Abeywardana</h1>
-    <!-- <img src="./images/my pic.jpeg" alt="my image" height="150px" /> -->
-    <h4>071 620 2533 ⋄ Colombo, Sri Lanka</h4>
-    <ul>
-        <li>
-            Github: <a href="https://github.com/virajA404">github.com/virajA404</a> 
-        </li>
-        <li>
-            linkedin: <a href="https://www.linkedin.com/in/virajabey/">linkedin.com/virajabey</a> 
-        </li>
-        <li>
-            Email: <a href="https://abeywardana21@gmail.com">abeywardana21@gmail.com</a> 
-        </li>
-    </ul>
-
-    <!-- summery section -->
-    <h2>Summery</h2>
-    <p>
-      Software Engineer seeking opportunities to extend skills and to
-      continuously learn new techniques to improve my knowledge in the field.
-    </p>
-    <hr />
-    <!-- summery section ends here-->
-
-    <!-- Education section -->
-    <h2>Education</h2>
-    <ul>
-      <li>Bachelor of Science, Information Technology - SLIIT (2025)</li>
-    </ul>
-    <hr />
-    <!-- Education section ends here-->
-
-    <!-- Skills section -->
-    <h2>Skills</h2>
-    <ul>
-      <li>
-        Languages:
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-        </ul>
-      </li>
-
-      <li>
-        Frameworks:
-        <ul>
-          <li>Bootstrap</li>
-        </ul>
-      </li>
-    </ul>
-    <hr />
-    <!-- Skills section ends here-->
-
-    <!-- Work Experience section -->
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <h3>UI/UX Engineer - Freelance</h3>
-        March 2023 - Present
-      </li>
-      <br />
+    <button class="btn-cta-primary" onclick="generatePDF()">Download Resume</button>
+    <section id="resume">
+      <h1>Viraj Abeywardana</h1>
+      <!-- <img src="./images/my pic.jpeg" alt="my image" height="150px" /> -->
+      <h4>071 620 2533 ⋄ Colombo, Sri Lanka</h4>
       <ul>
-        <li>Collaborating with clients to define their requirements.</li>
-        <li>Design wireframes, and UIs according to the user requirements.</li>
-        <li>Creating high-fidelity prototypes.</li>
+          <li>
+              Github: <a href="https://github.com/virajA404">github.com/virajA404</a> 
+          </li>
+          <li>
+              linkedin: <a href="https://www.linkedin.com/in/virajabey/">linkedin.com/virajabey</a> 
+          </li>
+          <li>
+              Email: <a href="https://abeywardana21@gmail.com">abeywardana21@gmail.com</a> 
+          </li>
       </ul>
-    </ul>
-
-    <ul>
-      <li>
-        <h3>UI/UX Engineer - Nichelabs</h3>
-        July 2022 - October 2022
-      </li>
-      <br />
+  
+      <!-- summery section -->
+      <h2>Summery</h2>
+      <p>
+        Software Engineer seeking opportunities to extend skills and to
+        continuously learn new techniques to improve my knowledge in the field.
+      </p>
+      <hr />
+      <!-- summery section ends here-->
+  
+      <!-- Education section -->
+      <h2>Education</h2>
+      <ul>
+        <li>Bachelor of Science, Information Technology - SLIIT (2025)</li>
+      </ul>
+      <hr />
+      <!-- Education section ends here-->
+  
+      <!-- Skills section -->
+      <h2>Skills</h2>
       <ul>
         <li>
-          Collaborated with product owners to define and prioritize user
-          requirements.
+          Languages:
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
         </li>
+  
         <li>
-          Designed UIs to fulfill user requirements and create High-fidelity
-          prototypes.
-        </li>
-        <li>
-          Worked closely with software engineers on developing the product.
+          Frameworks:
+          <ul>
+            <li>Bootstrap</li>
+          </ul>
         </li>
       </ul>
-    </ul>
-    <hr />
-    <!-- Work Experience section ends here-->
-
-    <!-- Projects section -->
-    <h2>Projects</h2>
-    <h3>Online Shop Management System:</h3>
-    <p>
-        Built a system to manage operations like managing sales, employees,
-        manufacturing processes, etc with CRUD operations for a hardware company
-        by using HTML, CSS, JavaScript, and Laravel.<a
-          href="https://github.com/virajA404/OnlineShopManagementSystem"
-          >(View Project)</a>
-      </p>
-
-    <h3>Science Wizards(Web Front-End):</h3>
-    <p>
-        Build a mobile responsive website using HTML, CSS, and Bootstrap for an
-        Online Learning Platform Website.<a
-          href="https://science-wizard.pages.dev/"
-          >(View Project)</a>
-      </p>
-      <hr>
-    <!-- Projects section ends here -->
+      <hr />
+      <!-- Skills section ends here-->
+  
+      <!-- Work Experience section -->
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <h3>UI/UX Engineer - Freelance</h3>
+          March 2023 - Present
+        </li>
+        <br />
+        <ul>
+          <li>Collaborating with clients to define their requirements.</li>
+          <li>Design wireframes, and UIs according to the user requirements.</li>
+          <li>Creating high-fidelity prototypes.</li>
+        </ul>
+      </ul>
+  
+      <ul>
+        <li>
+          <h3>UI/UX Engineer - Nichelabs</h3>
+          July 2022 - October 2022
+        </li>
+        <br />
+        <ul>
+          <li>
+            Collaborated with product owners to define and prioritize user
+            requirements.
+          </li>
+          <li>
+            Designed UIs to fulfill user requirements and create High-fidelity
+            prototypes.
+          </li>
+          <li>
+            Worked closely with software engineers on developing the product.
+          </li>
+        </ul>
+      </ul>
+      <hr />
+      <!-- Work Experience section ends here-->
+  
+      <!-- Projects section -->
+      <h2>Projects</h2>
+      <h3>Online Shop Management System:</h3>
+      <p>
+          Built a system to manage operations like managing sales, employees,
+          manufacturing processes, etc with CRUD operations for a hardware company
+          by using HTML, CSS, JavaScript, and Laravel.<a
+            href="https://github.com/virajA404/OnlineShopManagementSystem"
+            >(View Project)</a>
+        </p>
+  
+      <h3>Science Wizards(Web Front-End):</h3>
+      <p>
+          Build a mobile responsive website using HTML, CSS, and Bootstrap for an
+          Online Learning Platform Website.<a
+            href="https://science-wizard.pages.dev/"
+            >(View Project)</a>
+        </p>
+        <hr>
+      <!-- Projects section ends here -->
+    </section>
   </body>
 
   <footer>
