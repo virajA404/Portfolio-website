@@ -123,29 +123,24 @@
       <h2 id="heading-text">Contact Me</h2>
       <p>Got a question or proposal, or just want
         to say hello? Go ahead.</p>
-      <form onsubmit="sendEmail(); reset(); return false;">
+
+      <form id="contact" action="https://formspree.io/f/mnqkowzk" method="POST">
         <div class="input-set">
         <label for="">Your Name</label>
-        <input type="text" id="name" class= "input-field" placeholder="Enter your name">
+        <input type="text" name="Name" id="name" class= "input-field" placeholder="Enter your name" required>
         </div>
         <div class="input-set">
           <label for="">Your Email</label>
-          <input type= "email" id="email" class= "input-field" placeholder="Enter your email">
+          <input type= "email" name="Email" id="email" class= "input-field" placeholder="Enter your email" required>
         </div>
-        <!-- <div class="input-set">
-          <label for="">Subject</label>
-          <input type="text" class="input-field" placeholder="Enter your  subject">
-        </div> -->
         <div class="input-set">
           <label for="">Your Message</label>
-          <textarea class="input-field" id="message" rows="3" placeholder="Enter your message"></textarea>
+          <textarea name="Message" class="input-field" id="message" rows="3" placeholder="Enter your message" required></textarea>
         </div>
         <div class="cta-btns">
           <button class="btn-cta-primary" type="submit">Send</button>
         </div>
       </form>
-      <div class="cta-btns">
-      </div>
     </section>
     <!-- Contact me section ends here-->
 </body>

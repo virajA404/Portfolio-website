@@ -159,7 +159,6 @@ label{
 }
 input, textarea{
     width: 100%;
-    outline:none;
     border: 1px solid #ccc;
     padding: 0.5rem;
     border-radius: 0.25rem;
