@@ -217,4 +217,11 @@ form .cta-btns{
     .main{
         margin-top: 4rem;
     }
+    #contact-me{
+        margin-top: 8rem;
+        width: 80%;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
 }
