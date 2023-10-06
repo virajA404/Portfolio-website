@@ -64,12 +64,6 @@ body{
     margin:auto;
     margin-top: 8rem;
 }
-#hero-image{
-    width: 40%;
-    border-radius: 1rem;
-    border-radius: 50%;
-}
-
 h1{
     font-size: 4rem;
     font-weight: 600;
@@ -108,6 +102,7 @@ h1{
 /* cards section starts here */
 .card-section{
     margin-top: 8rem;
+    width: 80vw;
 }
 h2{
     font-size: 3rem;
@@ -118,7 +113,6 @@ h2{
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
-    width: 80vw;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -179,3 +173,48 @@ form .cta-btns{
     align-items: center;
 }
 /* contact me section ends here */
+
+/* navigation section mobile */
+@media screen and (max-width:768px){
+    #hamburger-menu-btn {
+        display: inline;
+    }
+    .nav{
+        height: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        top:5.25rem;
+        width: 100%;
+        position: fixed;
+        text-align: center;     
+        transition: 0.5s;  
+        overflow: hidden;
+    }
+    .nav.active{
+        min-height: 100%;
+    }
+    .nav ul {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        transition: 0.5s; 
+        font-size: 2rem;
+        opacity: 0;
+    }
+    .nav.active ul{
+        opacity: 1;
+    }
+    .btn_contact{
+        display: none;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .material-symbols-outlined{
+        display:flex !important;
+    }
+    .main{
+        margin-top: 4rem;
+    }
+}
