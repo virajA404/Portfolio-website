@@ -54,15 +54,14 @@ body{
 
 /* hero section start here */
 .main{
-    max-height: 70vh;
+    /* max-height: 70vh; */
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     flex-direction: column;
-    margin:auto;
-    margin-top: 8rem;
+    
 }
 h1{
     font-size: 4rem;
@@ -101,7 +100,7 @@ h1{
 
 /* cards section starts here */
 .card-section{
-    margin-top: 8rem;
+    margin-top: 10rem;
     width: 80vw;
 }
 h2{
@@ -112,7 +111,7 @@ h2{
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -215,6 +214,13 @@ form .cta-btns{
         display:flex !important;
     }
     .main{
-        margin-top: 4rem;
+        margin-top: 6rem;
+    }
+    #contact-me{
+        /* margin-top: 8rem; */
+        width: 80%;
+    }
+    h2{
+        font-size: 2.5rem;
     }
 }
