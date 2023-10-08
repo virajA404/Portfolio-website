@@ -13,6 +13,8 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+
 /* navigation section start here */
 .header{
     height: 8vh;
@@ -52,16 +54,16 @@ body{
 }
 /* navigation section ends here */
 
+
 /* hero section start here */
 .main{
-    /* max-height: 70vh; */
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     flex-direction: column;
-    
+    margin-top: 8rem;
 }
 h1{
     font-size: 4rem;
@@ -72,7 +74,6 @@ h1{
 .description{    
     line-height: 150%;
     padding: 1rem 0 ;
-    /* text-align: center; */
 }
 
 .cta-btns{
@@ -98,10 +99,11 @@ h1{
 }
 /* hero section end here */
 
+
 /* cards section starts here */
 .card-section{
     margin-top: 10rem;
-    width: 80vw;
+    width: 80%;
 }
 h2{
     font-size: 3rem;
@@ -135,6 +137,7 @@ h2{
 }
 /* cards section ends here */
 
+
 /* contact me section starts here */
 #contact-me{
     margin-top: 8rem;
@@ -148,7 +151,6 @@ form{
 }
 label{
     font-weight: 500;
-    
 }
 input, textarea{
     width: 100%;
@@ -172,6 +174,18 @@ form .cta-btns{
     align-items: center;
 }
 /* contact me section ends here */
+
+/* Footer section starts here */
+footer{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    width:80%;
+}
+    
+/* Footer section ends here */
 
 /* navigation section mobile */
 @media screen and (max-width:768px){
@@ -217,7 +231,6 @@ form .cta-btns{
         margin-top: 6rem;
     }
     #contact-me{
-        /* margin-top: 8rem; */
         width: 80%;
     }
     h2{
