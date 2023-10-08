@@ -236,4 +236,11 @@ footer{
     h2{
         font-size: 2.5rem;
     }
+    #contact-me{
+        margin-top: 8rem;
+        width: 80%;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
 }
