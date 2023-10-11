@@ -18,7 +18,7 @@ body{
 /* navigation section start here */
 .header{
     height: 8vh;
-    width: 80vw;
+    width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
