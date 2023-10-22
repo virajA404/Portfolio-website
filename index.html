@@ -33,6 +33,9 @@
           <li>
             <a target="_blank" href="https://github.com/virajA404">GitHub</a>
           </li>
+          <!-- <li>
+            <a target="_blank" href="https://github.com/virajA404">Behance</a>
+          </li> -->
           <li>
             <button class="btn_contact" id="hamburger-menu-btn">Contact Us</button>
           </li>
@@ -54,7 +57,7 @@
         <h1 id="hero-text">
            Viraj. <br>A Software Engineer
         </h1>
-        <p class="description">
+        <p class="description" id="hero-description">
             I'm Viraj Abeywardana, an IT undergraduate based in Colombo, Sri Lanka. I Currently working as a
             freelance web designer. You can checkout my projects and contact me if you have an exiting
             project or job opportunity.
@@ -62,7 +65,7 @@
       </div>
       <div class="cta-btns">
         <a class="btn-cta-primary" href="#my-projects">See my projects</a>
-        <a target="_blank" class="btn-cta-secondary" href="./Viraj Abeywardan - SE Resume.pdf">My resume</a>
+        <a target="_blank" class="btn-cta-secondary" href="./Viraj Abeywardan - Resume.pdf">My resume</a>
       </div>
       
         <!-- <img id="hero-image" src="images/hero_image.jpg" alt="a photo of me" /> -->
@@ -79,17 +82,30 @@
         <!-- card1 -->
         <div class="card card1">
           <div class="container">
+            <img src="./images/group project.jpg" alt="Website screenshot">
+          </div>
+          <div class="details">
+            <h3>Store Master: Shop Management System</h3>
+            <p>This is an online online shop management system using PHP Laravel Framework</p>
+          </div>
+          <div class="cta-btns">
+            <a class="btn-cta-primary small" target="_blank" href="https://github.com/virajA404/OnlineShopManagementSystem">Git Hub</a>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="card card1">
+          <div class="container">
             <img src="./images/Mobile app.jpg" alt="mobile app">
           </div>
           <div class="details">
-            <h3>Cosmetic Store Android App</h3>
+            <h3>E-commerce Store Android App</h3>
             <p>This is an online cosmetic selling app built by using Java, Android Studio, and Firebase</p>
           </div>
           <div class="cta-btns">
             <a class="btn-cta-primary small" target="_blank" href="https://github.com/virajA404/CosmeticsStore">Git Hub</a>
           </div>
         </div>
-        <!-- card2 -->
+        <!-- card3 -->
         <div class="card card2">
           <div class="container">
             <img src="./images/web frontend.jpg" alt="Website screenshot">
@@ -103,19 +119,6 @@
             <a class="btn-cta-secondary small" target="_blank" href="https://github.com/virajA404/Science-Wizard-Website">Git Hub</a>
           </div>
         </div>
-        <!-- card3 -->
-        <div class="card card1">
-          <div class="container">
-            <img src="./images/group project.jpg" alt="Website screenshot">
-          </div>
-          <div class="details">
-            <h3>Store Master: Shop Management System</h3>
-            <p>This is an online online shop management system using PHP Laravel Framework</p>
-          </div>
-          <div class="cta-btns">
-            <a class="btn-cta-primary small" target="_blank" href="https://github.com/virajA404/OnlineShopManagementSystem">Git Hub</a>
-          </div>
-        </div>
       </div>
     </section>
     <!-- My projects section ends here-->
@@ -123,7 +126,7 @@
     <!-- Contact me section starts here-->
     <section id="contact-me">
       <h2 id="heading-text">Contact Me</h2>
-      <p>Got a question or proposal, or just want
+      <p class="description">Got a question or proposal, or just want
         to say hello? Go ahead.</p>
 
       <form id="contact" action="https://formspree.io/f/mnqkowzk" method="POST">
